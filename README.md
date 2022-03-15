@@ -7,14 +7,19 @@ Preprocess設計:
   2. 利用光補償的方式增加文字的可辨識度
   3. Deslanting Algorithm去除草書書寫格式(變成正常、非斜體字型)
   4. Local Adaptive Binarization來增加文字的可讀性
+
 Line Segmentation設計:
   利用OTSU Threshold and Binarization，利用Y軸直方圖投影輪廓與adaptive threshold between valleys來獲取初始線段，運用line drawing algorithm來增加初始線段的正確率
+  
 Word Segmentation 設計:
   利用 scale space technique的方式來進行字與字間的切割
+  
 Picture Size Standardize 設計:
   使用Python內的OS Library抓取Word Segmentation處理完各個資料夾內的data，接著使用Python Image Library(PIL)內的Image讀檔寫檔功能改寫Image的大小及比例
+  
 Word Recognized設計:
   輸入固定是128x32size的圖片，先用5層CNN layers來把圖片中重要的32x256個feature抓出來，接著使用2層RNN layers生成一個32x80的字串，再使用CTC從32x80的字串中找出最佳解與loss value
+  
 檔案輸入與輸出:
   使用Python內的OS Library抓取Picture Size Standardize處理完的data，並分成每個Line資料夾中的Word變成分別一行句子
 ## 3. 系統實現與實驗
