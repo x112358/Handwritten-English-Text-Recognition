@@ -30,6 +30,13 @@ Word Recognized設計:
 ## 4. Accuracy of Word Recognition : 88.8283%
 ## 5. 結論
   成功地將影像中的文字辨識出來並儲存成文字檔，在Preprocess的部分雖然能有效的降低後續切割與辨識文字的時候的誤差
+## 6. 參考文獻
+- Xinyu Zhou, Cong Yao, He Wen, Yuzhi Wang, Shuchang Zhou, Weiran He, and Jiajun Liang Megvii Technology Inc., Beijing, China. EAST: An Efficient and Accurate Scene Text Detector
+- J.J. Hull CEDAR, State Univ. of New York, Buffalo, NY, USA. “A database for handwritten text recognition research”
+- Guillaume Lazzara and Thierry Géraud, 2014. "Efficient Illumination Compensation Techniques for text images“
+- Christian Wolf, Jean-Michel Jolion and Francoise Chassaing. Text Localization, Enhancement and Binarization in Multimedia Documents, 2002. “International Conference on Pattern Recognition (ICPR), volume 4, pages 1037-1040.”
+- https://medium.com/@arthurflor23/handwritten-text-recognition-using-tensorflow-2-0-f4352b7afe16
+- https://github.com/githubharald/SimpleHTR
 
 
 
